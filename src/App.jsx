@@ -5,6 +5,8 @@ import './App.css'
 import Header from './components/Header/Header'
 import Capabilities from './components/Capabilities/Capabilities'
 import RecentProjects from './components/RecentProjects/RecentProjects'
+import CaseStudies from './components/CaseStudies/CaseStudies'
+import About from './components/About/About'
 
 function App() {
 
@@ -13,6 +15,8 @@ function App() {
     <Header />
     <Capabilities />
     <RecentProjects />
+    <CaseStudies />
+    <About />
     </>
   )
 }
