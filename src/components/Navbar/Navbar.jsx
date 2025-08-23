@@ -25,7 +25,7 @@ function Navbar() {
           {/* Hamburger Button for Mobile */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-white focus:outline-none"
+            className="md:hidden text-black focus:outline-none"
           >
             <svg
               className="w-7 h-7"
