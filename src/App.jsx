@@ -7,6 +7,8 @@ import Capabilities from './components/Capabilities/Capabilities'
 import RecentProjects from './components/RecentProjects/RecentProjects'
 import CaseStudies from './components/CaseStudies/CaseStudies'
 import About from './components/About/About'
+import Testimonials from './components/Testimonials/Testimonials'
+import Footer from './components/Footer/Footer'
 
 function App() {
 
@@ -17,6 +19,8 @@ function App() {
     <RecentProjects />
     <CaseStudies />
     <About />
+    <Testimonials />
+    <Footer />
     </>
   )
 }

@@ -1,0 +1,39 @@
+.swiper {
+  height: 500px;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #cbd5e1; /* gray-400 */
+  border-radius: 50%;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  width: 14px;
+  height: 14px;
+  background-color: #111827; /* gray-900 */
+  opacity: 1;
+}
+
+.slider-content::before {
+  content: "“";
+  font-size: 3rem;
+  position: absolute;
+  left: 13%;
+  top: 0%;
+  color: #d1d5db;
+  opacity: 0.5;
+}
+
+.slider-content::after {
+  content: "”";
+  font-size: 3rem;
+  position: absolute;
+  right: 15%;
+  bottom: 34%;
+  color: #d1d5db;
+  opacity: 0.5;
+}
