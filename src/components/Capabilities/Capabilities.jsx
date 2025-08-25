@@ -1,16 +1,17 @@
 import React from "react";
+import "../../assets/fonts.css"; // Ensure this path is correct based on your project structure
 
 function Capabilities() {
   return (
     <section className="bg-gray-100 py-16 px-6 md:px-20">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="max-w-6xl px-6 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
         
         {/* Left Column */}
         <div>
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">
+          <h2 className="font-avant text-4xl text-gray-800 mb-4">
             What are <br /> <span className="text-gray-600">we capable of</span>
           </h2>
-          <p className="text-gray-600 mb-8 leading-relaxed">
+          <p className="text-gray-600 mb-8 leading-relaxed w-80">
             By focusing on design as an enabler and putting a huge emphasis on
             our clients as co-producers, we create innovative, sustainable
             marketing that enhances brand experience and user engagement.
