@@ -1,19 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import logo from "../../assets/img/logo.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        setShowNavbar(false);
+      } else {
+        setShowNavbar(true);
+      }
+      setLastScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
 
   return (
-    <nav className="absolute top-0 left-0 w-full z-20">
-      <div className="flex items-center justify-between px-6 py-4">
+    <nav
+      className={`fixed top-0 left-0 w-full z-20 transition-transform duration-300 ${
+        showNavbar ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
+      <div className="flex items-center justify-between px-6 py-4 bg-opacity-95">
         {/* Logo */}
-        <div className="w-1/2">
-          <img src="/logo.png" alt="Digital Spaniel Logo" className="h-10" />
+        <div className="w-1/2 px-8 mt-2">
+          <img src={logo} alt="Digital Spaniel Logo" className="h-15" />
         </div>
 
         {/* Links */}
         <div className="w-1/2 flex justify-center items-center relative">
-          {/* Desktop Links */}
           <div className="hidden md:flex space-x-8 text-white font-medium absolute left-1/2 transform -translate-x-1/2">
             <a href="#services" className="border-b-2 border-white">
               Services
@@ -35,7 +55,7 @@ function Navbar() {
           {/* Hamburger Button for Mobile */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden absolute right-0 text-black focus:outline-none"
+            className="md:hidden absolute right-0 focus:outline-none"
           >
             <svg
               className="w-7 h-7"

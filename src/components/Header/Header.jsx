@@ -9,14 +9,14 @@ function Header() {
         <Navbar />
         {/* Left Side */}
         <div className="flex flex-col justify-between p-10 md:p-16 z-10">
-          <div className="flex flex-col justify-center flex-grow">
-            <p className="font-opensans font-semibold opacity-75 text-pink-600 text-sm tracking-wide uppercase mb-4" style={{ color: "#C0345E" }}>
+          <div className="md:m-auto mt-4 flex flex-col justify-center sm:text-left text-center flex-grow w-3/4 px-4">
+            <p className="font-opensans font-semibold opacity-75 text-pink-600 text-sm tracking-wide uppercase mb-8" style={{ color: "#C0345E" }}>
               Brand, Dev, Ecom, Marketing
             </p>
-            <h1 className="font-avant text-4xl md:text-5xl leading-tight mb-6">
+            <h2 className="font-avant font-bold text-3xl md:text-4xl leading-tight mb-6">
               We unleash <br />
               <span className="text-gray-700">business potential</span>
-            </h1>
+            </h2>
             <p className="font-opensans text-gray-600 mb-8">
               We create brand experiences which are memorable and distinct. 
               Our experienced team create and develop brands with personality and resonance.
