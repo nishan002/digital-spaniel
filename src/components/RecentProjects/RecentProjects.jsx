@@ -49,7 +49,7 @@ function RecentProjects() {
         <h2 className="text-3xl font-semibold text-gray-800 mb-8">
           Some of our <span className="text-gray-500 block">recent projects</span>
         </h2>
-        <div className="w-1/2 grid grid-cols-4 gap-2 mb-10 border-b border-gray-200">
+        <div className="md:w-1/2 grid grid-cols-4 gap-2 mb-10 border-b border-gray-200">
           {categories.map((cat, i) => (
             <button
               key={i}

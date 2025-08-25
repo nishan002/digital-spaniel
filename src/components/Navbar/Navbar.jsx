@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "../../assets/img/logo.png";
+import logo from "/assets/img/logo.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +29,7 @@ function Navbar() {
       <div className="flex items-center justify-between px-6 py-4 bg-opacity-95">
         {/* Logo */}
         <div className="w-1/2 px-8 mt-2">
-          <img src={logo} alt="Digital Spaniel Logo" className="h-15" />
+          <img src={logo} alt="Digital Spaniel Logo" className="md:h-15" />
         </div>
 
         {/* Links */}
