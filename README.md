@@ -1,12 +1,32 @@
-# React + Vite
+# Digital Spaniel – Interview Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was developed as part of an interview round.  
+It is a **React + Tailwind CSS** implementation of a modern landing page section called **Recent Projects**, featuring category filters, hover animations, and responsive design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+- Project showcase grid with images and hover overlays  
+- Fully responsive design (mobile-first, flex & grid layout)  
+- Smooth hover transitions for project previews  
+- Used redux for globally state management
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+- **React**
+- **Tailwind CSS**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/nishan002/digital-spaniel.git
+cd digital-spaniel
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
